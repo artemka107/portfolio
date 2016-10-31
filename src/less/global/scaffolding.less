@@ -2,6 +2,7 @@
   font-family: "Open Sans";
   font-weight: 400;
   font-style: normal;
+
   src:
     url("../fonts/opensans.woff") format("woff"),
     url("../fonts/opensans.woff2") format("woff2");
@@ -11,6 +12,7 @@
   font-family: "Open Sans";
   font-weight: 700;
   font-style: normal;
+
   src:
     url("../fonts/opensansbold.woff") format("woff"),
     url("../fonts/opensansbold.woff2") format("woff2");
@@ -32,13 +34,13 @@ input {
 }
 
 body {
-  font-size: 18px;
-  line-height: 27px;
-  font-family: "Open Sans", Arial, sans-serif;
-  color: #000;
-  font-style: normal;
+  color: @text-color;
+  background-color: @body-bg;
 
-  background-color: #fff;
+  font-family: @font-family;
+  font-size: @font-size;
+  font-style: normal;
+  line-height: @line-height;
 }
 
 img {
@@ -46,8 +48,25 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+
+  color: @link-color;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+
+    color: @link-color--hover;
+  }
+}
+
 .visually-hidden {
   position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 
   width: 1px;
   height: 1px;
@@ -55,7 +74,38 @@ img {
   padding: 0;
 
   border: 0;
+}
 
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+//------------------------------------------------------------------------------
+//  Типографика
+//------------------------------------------------------------------------------
+
+// .h1,
+h1 {
+  font-size: @font-size--h1;
+}
+
+// .h2,
+h2 {
+  font-size: @font-size--h2;
+}
+
+// .h3,
+h3 {
+  font-size: @font-size--h3;
+}
+
+// .h4,
+h4 {
+  font-size: @font-size--h4;
+}
+
+// .h5,
+h5 {
+  font-size: @font-size--h5;
+}
+
+// .h6,
+h6 {
+  font-size: @font-size--h6;
 }
