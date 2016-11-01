@@ -13,6 +13,95 @@
     <script src="js/minjs/picturefill.js" async></script>
   </head>
 <body>
-  <h1>привет я страница</h1><p>а нет</p>
+  <div class="container">
+    <header class="page-header">
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#about" class="navigation__link"><svg width="20" height="20"><use xlink:href=""></use></svg>Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#promo" class="navigation__link"><svg width="20" height="20"><use xlink:href=""></use></svg>Обо мне</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#portfolio" class="navigation__link"><svg width="20" height="20"><use xlink:href=""></use></svg>мои работы</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#vk" class="navigation__link"><svg width="20" height="20"><use xlink:href=""></use></svg>Vk</a>
+          </li>
+          <li class="navigation__item">
+            <a href="gh" class="navigation__link"><svg width="20" height="20"><use xlink:href=""></use></svg>GitHub</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about" class="about">
+      <h1 class="page-header__title">Артём Иванец</h1>
+      <header class="about__header">
+        <h2 class="page-header__sub-title">Frontend Developer</h2>
+        <a href="https://vk.com/steve_g_8" class="about__img">
+          <img src="img/me.jpg" alt="фото со мной">
+        </a>
+      </header>
+
+      <div class="promo">
+        <h2 class="promo__title">Обо мне</h2>
+        <p class="promo__text">Изучением вёрстки занимаюсь около года, слежу за новыми технологиями и эксперементирую с их внедрением, связаться можно через email: <b>artem-ivanec@mail.ru</b>, примеры кода можно найти на <a href="https://github.com/artemka107">GitHub</a></p>
+        <div class="promo__wrap-list">
+          <h3 class="promo__sub-title">Технологии, которыми я владею:</h3>
+          <ul class="promo__list">
+            <li class="promo__item">HTML, CSS</li>
+            <li class="promo__item">Методология БЭМ</li>
+            <li class="promo__item">Валидная, кроссбраузерная (ИЕ10), адаптивная, семантическая вёрстка.</li>
+            <li class="promo__item">LESS, SASS (SCSS), PostCSS.</li>
+            <li class="promo__item">Grunt, Gulp.</li>
+            <li class="promo__item">SVG.</li>
+            <li class="promo__item">Photoshop</li>
+          </ul>
+        </div>
+        <div class="promo__wrap-list">
+          <h3 class="promo__sub-title">Личностные качества</h3>
+          <ul class="promo__list">
+            <li class="promo__item">Самоорганизованность</li>
+            <li class="promo__item">Ответственность</li>
+            <li class="promo__item">Самообучаемость</li>
+            <li class="promo__item">Умение находить общий язык с коллегами и клиентами</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="portfolio__title">Портфолио</h2>
+      <ul class="work">
+        <li class="work__item">
+          <a href="" class="work__list">
+            <img src="img/photo-1.jpg" alt="Проект Седона">
+          </a>
+        </li>
+        <li class="work__item">
+          <a href="" class="work__list">
+            <img src="img/photo-1.jpg" alt="Проект Мишка">
+          </a>
+        </li>
+        <li class="work__item">
+          <a href="" class="work__list">
+            <img src="img/photo-1.jpg" alt="Проект Glacy">
+          </a>
+        </li>
+        <li class="work__item">
+          <a href="" class="work__list">
+            <img src="img/photo-1.jpg" alt="Проект Техномарт">
+          </a>
+        </li>
+        <li class="work__item">
+          <a href="" class="work__list">
+            <img src="img/photo-1.jpg" alt="Проект Нёрдс">
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
 </body>
 </html>
