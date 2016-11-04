@@ -3,17 +3,29 @@
   position: relative;
   background: linear-gradient(135deg,hsl(40, 99%, 50%), hsl(280, 100%, 75%));
   background-size: 100% 100%;
+
+  @media @sm-only {
+    height: 100vh;
+  }
+
+  @media @lg {
+    height: 100vh;
+  }
 }
 
 
 .page-header__heading {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   width: 85%;
 
   @media @md {
     margin-bottom: 100px;
+  }
+
+  @media @xl {
+    padding-top: 150px;
   }
 }
 

@@ -29,21 +29,57 @@
 }
 
 .navigation__link {
-  text-decoration: none;
+  position: relative;
   text-align: center;
   width: 100%;
   font-size: 20px;
   line-height: 20px;
   display: inline-block;
   padding: 15px;
-  border-radius: 7px;
   border: 1px solid  #fff;
+  transition:
+    background-color 0.3s ease,
+    letter-spacing 0.2s ease;
+
+  @media @lg {
+    border: none;
+  }
 
   &:hover {
-    text-decoration: none;
+    letter-spacing: 0.5px;
+
+    & rect {
+      stroke-dasharray: 110, 770;
+    }
   }
 
-  &:active {
-    text-decoration: none;
+  & svg {
+    @media @xs {
+      display: none;
+    }
+
+    @media @lg {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+
+      & rect {
+        @media @lg {
+          transition: all 0.5s ease;
+          stroke: #fff;
+          stroke-width: 2px;
+          stroke-dashoffset: 365;
+          stroke-dasharray: 400, 0;
+        }
+
+        @media @xl {
+          stroke-dashoffset: 270;
+        }
+      }
+    }
   }
+
 }
