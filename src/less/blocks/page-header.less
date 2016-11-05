@@ -1,6 +1,7 @@
 .page-header {
   min-height: 570px;
   position: relative;
+  z-index: 3;
   background: linear-gradient(135deg,hsl(40, 99%, 50%), hsl(280, 100%, 75%));
   background-size: 100% 100%;
 
@@ -13,6 +14,20 @@
   }
 }
 
+.page-header__wrapper {
+  min-height: 570px;
+  position: relative;
+  z-index: 2;
+
+  @media @sm-only {
+    height: 100vh;
+  }
+
+  @media @lg {
+    height: 100vh;
+  }
+
+}
 
 .page-header__heading {
   margin-left: auto;
