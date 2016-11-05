@@ -479,8 +479,14 @@ h6 {
 .page-header {
   min-height: 570px;
   position: relative;
+  z-index: 3;
   background: linear-gradient(135deg, #feaa01, #d580ff);
   background-size: 100% 100%;
+}
+.page-header__wrapper {
+  min-height: 570px;
+  position: relative;
+  z-index: 2;
 }
 .page-header__heading {
   margin-left: auto;
@@ -545,6 +551,26 @@ h6 {
 .navigation__link:hover rect {
   stroke-dasharray: 110, 770;
 }
+.promo {
+  background-image: url(../img/bg.svg);
+  background-position: 0 0;
+  background-size: 840px 660px;
+  background-repeat: repeat;
+}
+.hdr-wrap {
+  position: relative;
+}
+.hdr-wrap::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 4px;
+  width: 100%;
+  border-radius: 50%;
+  height: 15px;
+  background: #777;
+  box-shadow: 0 15px 10px #777;
+}
 @media (min-width: 0px) {
   .navigation__link svg {
     display: none;
@@ -600,6 +626,9 @@ h6 {
   .page-header {
     height: 100vh;
   }
+  .page-header__wrapper {
+    height: 100vh;
+  }
   .page-header__heading {
     padding-top: 80px;
   }
@@ -645,8 +674,11 @@ h6 {
     stroke-dashoffset: 270;
   }
 }
-@media (max-width: 544px) {
+@media (max-width: 767px) {
   .page-header {
+    height: 100vh;
+  }
+  .page-header__wrapper {
     height: 100vh;
   }
 }
