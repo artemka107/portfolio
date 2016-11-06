@@ -477,14 +477,12 @@ h6 {
   margin-right: auto;
 }
 .page-header {
-  min-height: 570px;
   position: relative;
   z-index: 3;
   background: linear-gradient(135deg, #feaa01, #d580ff);
   background-size: 100% 100%;
 }
 .page-header__wrapper {
-  min-height: 570px;
   position: relative;
   z-index: 2;
 }
@@ -898,9 +896,9 @@ h6 {
 }
 @media (max-width: 767px) {
   .page-header {
-    height: 105vh;
+    height: 100vh;
   }
   .page-header__wrapper {
-    height: 105vh;
+    height: 100vh;
   }
 }
