@@ -2,6 +2,7 @@
 build/
 node_modules/
 design/
+.publish/
 *.zip
 *.rar
 .idea
