@@ -487,33 +487,33 @@ h6 {
   z-index: 2;
 }
 .page-header__heading {
-  margin-left: auto;
+  width: 85%;
   margin-right: auto;
   margin-bottom: 60px;
-  width: 85%;
+  margin-left: auto;
 }
 .page-header__title {
-  text-align: center;
   margin: 0;
+  margin-bottom: 10px;
   padding-top: 50px;
-  line-height: 50px;
+  text-align: center;
+  letter-spacing: 3px;
   font-size: 33px;
   font-weight: 400;
-  margin-bottom: 10px;
-  letter-spacing: 3px;
+  line-height: 50px;
 }
 .page-header__sub-title {
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
   width: 285px;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
-  font-size: 15px;
-  line-height: 30px;
+  letter-spacing: 6px;
   border: 1px solid  #fff;
   border-radius: 15px;
+  font-size: 15px;
   font-weight: 400;
-  letter-spacing: 6px;
+  line-height: 30px;
 }
 .navigation {
   width: 80%;
@@ -587,6 +587,10 @@ h6 {
 }
 .promo__text::first-letter {
   padding-left: 40px;
+}
+.promo__text address {
+  display: inline-block;
+  font-style: normal;
 }
 .promo__text a {
   color: currentColor;
@@ -732,9 +736,9 @@ h6 {
     width: 540px;
   }
   .page-header__title {
-    font-size: 50px;
-    letter-spacing: 7px;
     margin-bottom: 15px;
+    letter-spacing: 7px;
+    font-size: 50px;
   }
   .page-header__sub-title {
     width: 100%;
@@ -765,15 +769,15 @@ h6 {
     margin-bottom: 100px;
   }
   .page-header__title {
+    margin-bottom: 30px;
     font-size: 75px;
     line-height: 75px;
-    margin-bottom: 30px;
   }
   .page-header__sub-title {
-    font-size: 20px;
-    line-height: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 20px;
   }
   .navigation__list {
     display: -ms-flexbox;
